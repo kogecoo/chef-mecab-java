@@ -1,5 +1,8 @@
 mecab-java Chef Cookbook
 =======================
+
+[![Circle CI](https://circleci.com/gh/kogecoo/chef-mecab-java.svg?style=svg)](https://circleci.com/gh/kogecoo/chef-mecab-java)
+
  Installs an official java binding for mecab
 
 Platforms

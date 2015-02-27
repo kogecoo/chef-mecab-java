@@ -9,8 +9,6 @@ copy_to = "#{Chef::Config[:file_cache_path]}/#{src_filename}"
 checksum = node["mecab-java"]["support"][version]["checksum"]
 checksum_type = node["mecab-java"]["support"][version]["checksum_type"]
 
-make_cmd = node["mecab-java"]["sdk_header_path"] ? "make INCLUDE=#{node['mecab-java']['sdk_header_path']}" : "make"
-
 if not supported_versions.include?(version) then
   Chef::Application.fatal!("#{recipe_name} doesn't support the version #{version}")
 end
@@ -29,7 +27,7 @@ execute "build mecab-java" do
   command <<-EOD
     tar -zxf #{src_filename}
     cd #{src_filename_noext}
-    #{make_cmd}
+    make INCLUDE=#{node['java']['java_home']}/include
   EOD
   notifies :run, 'execute[install mecab-java]', :immediately
 end

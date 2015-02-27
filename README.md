@@ -15,7 +15,6 @@ The following platforms and versions are tested and supported using test-kitchen
 Attributes
 -----
 IMPORTANT!
-* You need to set the path of JDK headers to `node['mecab-java']['sdk_header_path']`
 * You need to set the path where mecab-java binding will be installed to `node['mecab-java']['install_to']`
 
 see also [source](attributes/default.rb)

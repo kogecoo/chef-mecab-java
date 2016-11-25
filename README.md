@@ -3,7 +3,7 @@ mecab-java Chef Cookbook
 
 [![Circle CI](https://circleci.com/gh/kogecoo/chef-mecab-java.svg?style=svg)](https://circleci.com/gh/kogecoo/chef-mecab-java)
 
-# This recipe is DEPRECATED. It is merged to [chef-mecab](https://circleci.com/gh/kogecoo/chef-mecab) cookbook.
+## This recipe is DEPRECATED. It is merged to [chef-mecab](https://circleci.com/gh/kogecoo/chef-mecab) cookbook.
 
  Installs an official java binding for mecab
 
